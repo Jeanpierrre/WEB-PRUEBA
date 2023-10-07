@@ -4,12 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run rename-functions",
+    "rename-functions": "node rename-functions.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
+    "fs-extra": "^10.0.0",
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
     "@angular/compiler": "^15.0.0",
