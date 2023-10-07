@@ -32,7 +32,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "outputHashing": "all"
           },
           "configurations": {
             "production": {
@@ -51,6 +52,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "outputHashing": "all",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -100,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3ab84b9c-d4f0-443f-83a4-8c8e0bcd5ceb"
   }
 }
